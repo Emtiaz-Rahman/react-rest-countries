@@ -16,14 +16,16 @@ function Loadcountries() {
     fetch(`https://restcountries.com/v3.1/all`)
       .then(res => res.json())
       .then(data => setCountries(data))
+
   }, [])
   return (
     <div>
-      <h2>Vigiting varies country all of the world!!</h2>
-      <p>Available Country:{countries.length}</p>
+      <h3>Visiting new country all over the world!!</h3>
+      <p>Country:{countries.length}</p>
     </div>
   )
 }
+
 
 
 
